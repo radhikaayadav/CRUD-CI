@@ -39,7 +39,7 @@ if($failure!= "")
     	<td><?php echo $product['description']?></td>
     	<td><?php echo $product['price']?></td>
     	<td><?php echo $product['image']?></td>
-    	<td>
+    	
     	<td>
     		<button> 
     			<a href="<?php echo base_url().'index.php/products/edit/'.$product['id']?>">EDIT</a>

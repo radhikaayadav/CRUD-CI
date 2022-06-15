@@ -1,0 +1,13 @@
+CREATE TABLE `product` (
+	`id` INT(100) NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(250) NULL DEFAULT NULL,
+	`description` VARCHAR(500) NULL DEFAULT NULL,
+	`price` VARCHAR(500) NULL DEFAULT NULL,
+	`image` VARCHAR(500) NULL DEFAULT NULL,
+	`created_at` TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=17
+;
