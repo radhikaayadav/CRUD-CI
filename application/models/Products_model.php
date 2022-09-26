@@ -3,26 +3,27 @@ class Products_model extends CI_model
 {
 	function create($formArray)
 	{
-		$this->db->insert('product',$formArray);
+		$this->db->insert('products',$formArray);
+
 	}
 	function all()
 	{
-		return $product = $this->db->get('product')->result_array();
+		return $product = $this->db->get('products')->result_array();
 	}
 	function getProduct($id)
 	{  
 		$this->db->where('id',$id);
-		return $product = $this->db->get('product')->row_array();
+		return $product = $this->db->get('products')->row_array();
 	}
 	function updateProduct($id,$formArray)
 	{
 		$this->db->where('id',$id);
-		$this->db->update('product',$formArray);
+		$this->db->update('products',$formArray);
 	}
 	function deleteProduct($id)
 	{
 		$this->db->where('id',$id);
-		$this->db->delete('product');
+		$this->db->delete('products');
 	}
 }
 ?>

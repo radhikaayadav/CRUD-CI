@@ -1,0 +1,9 @@
+CREATE TABLE `products` (
+	`columns - id` INT(255) NOT NULL,
+	`product_name` TEXT NULL DEFAULT NULL,
+	`product_price` TEXT NULL DEFAULT NULL,
+	`product_desccription` TEXT NULL DEFAULT NULL,
+	`product_image` VARCHAR(255) NULL DEFAULT NULL
+)
+ENGINE=InnoDB
+;
